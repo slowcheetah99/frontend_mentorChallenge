@@ -1,0 +1,22 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challenge",
+  "main": "index.js",
+  "scripts": {
+    "compileSass": "sass sass/main.scss css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slowcheetah99/frontend_mentorChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slowcheetah99/frontend_mentorChallenge/issues"
+  },
+  "homepage": "https://github.com/slowcheetah99/frontend_mentorChallenge#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}
