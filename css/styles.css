@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 *::before,
 *::after,
 * {
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   padding: 3rem;
   background-color: #e7e7e9;
   overflow: hidden;
@@ -55,7 +56,7 @@ body {
 }
 .illustration-svg__woman {
   transform: scale(0.6) translate(-60%, -20%);
-  display: block;
+  display: inline;
   max-width: auto;
   overflow: hidden;
 }
@@ -72,6 +73,7 @@ body {
 }
 .accordion__heading {
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .accordion__item {
@@ -125,7 +127,11 @@ body {
   transform: scale(0.6) translate(95%, -295%);
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 900px) {
+  body {
+    padding: 0;
+  }
+
   .inner__card {
     display: flex;
     flex-direction: column;
@@ -141,7 +147,7 @@ body {
   }
 
   .illustration-svg__woman--mobile {
-    display: block;
+    display: inline-block;
     transform: scale(0.6) translate(20%, -580%);
     z-index: 150;
   }

@@ -1,3 +1,6 @@
+//default font-family
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 //text colors
 $text-darkBlue: hsl(238, 29%, 16%);
 $text-softRed: hsl(14, 88%, 65%);
@@ -14,6 +17,7 @@ $light-greyBlue: hsl(240, 5%, 91%);
 
 //typography
 $font-size: 1.2rem;
+$default-font: 'Kumbh Sans', sans-serif;
 
 //heights
 $height-outerCard: 85vh;
@@ -40,7 +44,7 @@ html{
 }
 
 body{
-    font-family: sans-serif;
+    font-family: $default-font;
     padding: 3rem;
     background-color: $light-greyBlue;
     overflow: hidden;
@@ -87,7 +91,7 @@ body{
 
     &__woman{
         transform: scale(0.6) translate(-60%, -20%);
-        display: block;
+        display: inline;
         max-width: auto;
         overflow: hidden;
 
@@ -105,6 +109,7 @@ body{
 
     &__heading{
         margin-bottom: 1rem;
+        font-weight: 700;
     }
 }
 .accordion__item{
@@ -165,7 +170,10 @@ body{
     transform: scale(0.6) translate(95%, -295%);
 }
 
-@media screen and (min-width: 375px){
+@media screen and (min-width: 375px) and (max-width: 900px){
+    body{
+        padding: 0;
+    }
     .inner__card{
         display: flex;
         flex-direction: column;
@@ -179,7 +187,7 @@ body{
         display: none;
     }
     .illustration-svg__woman--mobile{
-        display: block;
+        display: inline-block;
         transform: scale(0.6) translate(20%,-580%);
         z-index: 150;
     }
